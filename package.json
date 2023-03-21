@@ -1,0 +1,22 @@
+{
+  "name": "codemy-chatbot",
+  "version": "1.0.0",
+  "description": "\"AI chatgpt telegram bot\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"ChatGpt",
+    "Telegrambot\""
+  ],
+  "author": "Nodir-Bek",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-telegram-bot-api": "^0.61.0",
+    "openai": "^3.2.1"
+  }
+}
