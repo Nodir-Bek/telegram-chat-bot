@@ -93,15 +93,12 @@ function Form() {
         });
 
       try {
-        tg.close();
-        formik.resetForm();
-        navigate("/", { state: { closeWindow: true } });
-        // const resp = await telegramBot.createOrder(formData);
-        // if (resp) {
-        //   tg.close();
-        //   formik.resetForm();
-        //   navigate("/", { state: { closeWindow: true } });
-        // }
+        const resp = await telegramBot.createOrder(formData);
+        if (Object.keys(resp).length) {
+          tg.close();
+          formik.resetForm();
+          navigate("/", { state: { closeWindow: true } });
+        }
       } catch (err) {
         console.error(err);
       } finally {
