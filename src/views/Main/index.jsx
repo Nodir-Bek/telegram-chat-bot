@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import telegramBot from "../../services/telegramBot";
-// import { useState } from "react";
 
 function Main() {
   const navigate = useNavigate();
@@ -56,7 +55,7 @@ function Main() {
     <div className="w-full flex flex-1 flex-col justify-start items-start gap-3">
       <div>
         <h2 className="text-[#000] font-semibold text-xl leading-5">
-          Kerakli dasturni tanlang
+          Kerakli dasturni tanlang +..+
         </h2>
       </div>
       <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-[10px] mt-5">
